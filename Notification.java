@@ -114,7 +114,7 @@ public class Notification extends JFrame
         }
     }
 
-    private Placement setPosition(Placement position)
+    protected Placement setPosition(Placement position)
     {
         switch(position) 
         {
