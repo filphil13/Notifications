@@ -114,38 +114,16 @@ public class Notification extends JFrame
         }
     }
 
-    protected Placement setPosition(Placement position)
+    protected void setPosition(int X, int Y)
     {
-        switch(position) 
-        {
-            case BOTTOMRIGHT:
-                //this.X = ;
-                //this.Y = ;
-                return position;
-            case BOTTOMLEFT:
-                //this.X = ;
-                //this.Y = ;
-                return position;
-            case BOTTOMCENTER:
-                //this.X = ;
-                //this.Y = ;
-                return position;
-            case TOPRIGHT:
-                //this.X = ;
-                //this.Y = ;
-                return position;
-            case TOPLEFT:
-                //this.X = ;
-                //this.Y = ;
-                return position;
-            case TOPCENTER:
-                //this.X = ;
-                //this.Y = ;
-                return position;
-            default:
-                throw new IllegalArgumentException();
-        }
+        this.setLocation(this.X,this.Y);
     }
+    
+    protected void setColor(int red, int green, int blue, int alpha)
+    {
+        this.setBackground(new Color(red, green, blue, alpha));
+    }
+    
     public void setNotifTitle(String title)
     {
         this.title = title;
